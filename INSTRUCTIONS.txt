@@ -70,6 +70,9 @@ callMode("Create a login form with validation.");
 Run a test file with:
 
 ```bash
+ollama pull qwen3:4b
+ollama pull gemma3:4b
+ollama pull mistral
 python runner.py test_modes2.t
 python runner.py test_blueprint.t
 python runner.py test_coder.t
