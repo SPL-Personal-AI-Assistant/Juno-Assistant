@@ -9,7 +9,7 @@ JunoStack is a custom programming language designed to act as an intelligent, mo
 - ✅ **API Endpoint Setup** — Define where models are served (e.g., `ollama`)
 - ✅ **Mode Assignment** — Assign tasks/roles to specific models (with support for friendly aliases)
 - ✅ **Mode Instructions** — Describe behavior per mode (e.g., `"debug this"`)
-- ✅ **Profile Groups** — Group modes into named workflows like `production`, `blueprint`, or `maintenance`
+- ✅ **Profile Groups** — Group modes into named workflows like `production`, `blueprint`, or `maintenance` (WIP)
 - ✅ **Dynamic Context Switching** — Use `currentMode` or `callMode(...)` to invoke AI partners
 - ✅ **Streaming Ollama Responses** — `callMode(...)` supports live response chunking from Ollama
 
@@ -41,7 +41,7 @@ profile production {
     debug
 }
 
-currentProfile = "production";
+currentProfile = "production"; (WIP)
 currentMode = "coder";
 callMode("Write a Python function to validate email input.");
 ```
